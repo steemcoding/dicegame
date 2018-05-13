@@ -1,33 +1,31 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.steemjs.com/lib/latest/steem.min.js"></script>
+  </head>
+  <body>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>repl.it</title>
-  <link href="index.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdn.steemjs.com/lib/latest/steem.min.js"></script>
-</head>
-
-<body>
   <form class="form-inline">
-    <div class="form-group mb-2">
-      <span class="input-group-text" id="basic-addon1">@</span>
+   <div class="form-group mb-2">
+    <span class="input-group-text" id="basic-addon1">@</span>
       <input type="text" class="form-control" id="myId" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-    </div>
-    <div class="form-group mx-sm-3 mb-2">
-      <input class="input-group-text" type="Date" id="myDate" />
-    </div>
-    <div class="form-group mb-2">
-      <button type="button" class="btn btn-primary" onclick="go()">조회</button>
-    </div>
+   </div>
+   <div class="form-group mx-sm-3 mb-2">
+    <input class="input-group-text" type="Date" id="myDate" />
+   </div>
+   <div class="form-group mb-2">
+    <button type="button" class="btn btn-primary" onclick="go()">조회</button>  
+   </div>
   </form>
   <div id ="count"></div>
   <table class="table table-striped" id="output"></table>
 
   <script src="votingday.js"></script>
-</body>
-
+  </body>
 </html>
