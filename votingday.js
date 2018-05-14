@@ -1,8 +1,8 @@
 document.getElementById('myDate').valueAsDate = new Date();
 
 function go(){
- var myId= document.getElementById("myId").value;
-
+ //var myId= document.getElementById("myId").value;
+ var myId=  $("#myId").val();
  steem.api.lookupAccounts(myId, 1, function(err, lookupAccounts) {
   if(myId!=lookupAccounts) alert('error ID');
   else myVoting(myId);
